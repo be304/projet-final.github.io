@@ -1,0 +1,88 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: rgb(197, 197, 243);
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 40px;
+}
+
+#a-propos {
+    display: flex;
+    align-items: center;
+}
+
+#a-propos .contenu {
+    flex: 1;
+}
+
+#projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.image-ronde {
+    border-radius:50%;
+    width: 200px;
+    height: 100px;
+    object-fit:cover;
+}
+
+.btn {
+    background-color:rgb(160, 160, 240);
+    color:black;
+    padding: 10px 20px;
+    text-decoration:none;
+}
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    height:30px;;
+}
+
+.competence {
+    Display : flex ;
+    Align-items : center ;
+    Margin-bottom : 10px ;
+}
+
+.nom-competence {
+    Width : 100px ; 
+}
+
+.barre-progression {
+    Width : 200px ; 
+    Height : 20px ;
+    Background-color : #f0f0f0 ;
+    Border-radius : 10px ;
+    Margin : 0 10px ;
+    Overflow : hidden ;
+}
+
+.remplissage {
+    Height : 100% ;
+    Background-color : #007bff ; 
+    Border-radius : 10px ;
+}
+
+.pourcentage {
+    Width : 40px ;
+}

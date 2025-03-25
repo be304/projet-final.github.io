@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXANTUS Bethia</title>
+    <link rel="stylesheet" href="site web 1.css">
+    <script>
+        const barres = document.querySelectorAll('.barre');
+    
+        function animerBarres() {
+          barres.forEach(barre => {
+            const pourcentage = barre.dataset.pourcentage;
+            barre.style.width = `${pourcentage}%`;
+          });
+        }
+        animerBarres();
+      </script>
+</head>
+<body>
+  <div>
+    <div>
+    <header>
+        <h1>Je suis Bethia  EXANTUS</h1>
+        <p>Je suis Développeuse en devenir passionné par le web et le design !</p>
+         <div>
+            <a href="Mes projets.html"class="btn">Voir mes projets</a>
+        <a href="#a-propos" class="btn">À propos</a>
+    </header>
+    <main>
+        <section id="a-propos">
+            <div>
+            <div>
+              <img src="image04.jpt.png" alt="veuillez patienter s'il vous plait"width="200"height="100" class="image-ronde" style="display: block;margin:0 auto;">
+            <h3>À propos</h3>
+            <div class="contenu">
+                <p>Mon est EXANTUS Bethia. je suis étudiante en Géographie et <br>
+                    Aménagement du Territoire licence 2 au Campus Henry Christophe de <br>
+                    l'Université d'État d'Haiti à Limonade etactuellement,<br>
+                    je suis également étudiante en développement web,niveau débutant <br>
+                    dans le projet D-CLIC de l'OIF.Maintenant,je cherche à améliorer mes <br>
+                    compétences en HTML,CSS et surtout en JavaScript .</p>
+                    <a href="CV_Bethia_Exantus782 (1).pdf" class="btn">Télécharger mon CV</a>
+            </div>
+        </div>
+        <h4>Mes compétences</h4>
+
+        <div class="competence">
+          <span class="nom-competence">HTML</span>
+          <div class="barre-progression">
+              <div class="remplissage" style="width: 80%;"></div>
+          </div>
+          <span class="pourcentage">80%</span>
+      </div>
+      
+      <div class="competence">
+          <span class="nom-competence">CSS</span>
+          <div class="barre-progression">
+              <div class="remplissage" style="width: 70%;"></div>
+          </div>
+          <span class="pourcentage">70%</span>
+      </div>
+      
+      <div class="competence">
+          <span class="nom-competence">JavaScript</span>
+          <div class="barre-progression">
+              <div class="remplissage" style="width: 60%;"></div>
+          </div>
+          <span class="pourcentage">60%</span>
+      </div>
+    
+      <section id="contact">
+            <div>
+            <h5>Si vous etes interessé à l'un des projets n'hésitez pas à me contacter afin d'avoir plus de détails!</h5>
+            <form action="contact.php" method="post">
+                <input type="text" name="nom" placeholder="Votre nom">
+                <input type="email" name="email" placeholder="Votre email">
+                <textarea name="message" placeholder="Votre message"></textarea>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>>disigne by CV_Bethia_Exantus782 Limonade, Haïti. - 2025</p>
+    </footer>
+</div>
+</div>
+</body>
+</html>
